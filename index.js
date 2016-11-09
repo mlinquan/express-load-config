@@ -5,7 +5,7 @@ var objectAssign = require('object-assign');
 function loadAllConfig(pth, env, opts) {
   if (typeof pth === 'string') {
     pth = {
-      path: resolve(pth)
+      path: resolve(pth).replace(/\\/g, '/')
     };
   }
 
@@ -16,7 +16,7 @@ function loadAllConfig(pth, env, opts) {
   }
 
   opts = objectAssign({
-    path: resolve('./config'),
+    path: resolve('./config').replace(/\\/g, '/'),
     env_path: 'env',
     env: 'development'
   }, opts, env, pth);
