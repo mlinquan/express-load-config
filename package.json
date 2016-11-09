@@ -1,0 +1,30 @@
+{
+  "name": "express-load-config",
+  "version": "0.0.1",
+  "description": "Auto load all config from directories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlinquan/express-load-config.git"
+  },
+  "homepage": "https://github.com/mlinquan/express-load-config#readme",
+  "keywords": [
+    "express",
+    "auto",
+    "load",
+    "config",
+    "configure"
+  ],
+  "bugs": {
+    "url": "https://github.com/mlinquan/express-load-config/issues"
+  },
+  "author": "LinQuan",
+  "license": "MIT",
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "object-assign": "^4.1.0"
+  }
+}
