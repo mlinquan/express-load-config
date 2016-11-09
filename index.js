@@ -40,6 +40,10 @@ function loadAllConfig(pth, env, opts) {
       var cfg_path = opts.path + '/' + cfg_file;
       var cfg_key = cfg_file.replace(/\.js$/, '');
       var cfg_obj = {};
+      var cfg_stat = fs.lstatSync(cfg_path);
+      if(cfg_stat.isDirectory()) {
+        return;
+      }
       cfg_obj[cfg_key] = require(cfg_path);
       objectAssign(configs, cfg_obj);
   });
