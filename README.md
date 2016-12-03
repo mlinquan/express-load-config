@@ -17,9 +17,9 @@ npm i express-load-config --save
 global.config = require('express-load-config')();
 // config path: ./path/to/config
 global.config = require('express-load-config')('./path/to/config');
-// custom mode,run "mode=tesing npm start" on your Commad or Terminal
+// custom mode, run "mode=testing npm start" on your Commad or Terminal
 global.config = require('express-load-config')('./path/to/config', {
-    env: process.env.mode
+    mode: process.env.mode
 });
 ```
 
