@@ -1,6 +1,6 @@
 {
   "name": "express-load-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Auto load all config from directories",
   "main": "index.js",
   "scripts": {
