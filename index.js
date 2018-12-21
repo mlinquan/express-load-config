@@ -34,6 +34,9 @@ function loadAllConfig(pth, env, opts) {
   } catch(e) {};
   var congif_files = fs.readdirSync(opts.path);
   congif_files.forEach(function(cfg_file, i) {
+    if(/^\./.test(cfg_file)) {
+        return;
+      }
       if(cfg_file == 'config.js') {
         return;
       }
